@@ -231,8 +231,8 @@ def create_multistep_example(n, steps, lags, lead_time=1):
 
 
 def load_multistep_data():
-    df1 = create_multistep_example(10, steps=1, lags=3, lead_time=1)
-    df2 = create_multistep_example(10, steps=3, lags=4, lead_time=2)
+    df1 = create_multistep_example(10, steps=3, lags=4, lead_time=2)
+    df2 = create_multistep_example(10, steps=1, lags=3, lead_time=1)
     df3 = create_multistep_example(10, steps=3, lags=4, lead_time=1)
     return [df1, df2, df3]
 
